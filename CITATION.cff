@@ -4,9 +4,10 @@ abstract: "This repository contains results of the 2023 NIST Collaborative Resea
 message: >-
   If you use this repository or present information about it publicly, please cite us.
 type: software
-version: 1.0
+version: 1.2
 doi: 10.18434/mds2-3024
 date-released: 2023-05-19
+url:  https://github.com/usnistgov/privacy_collaborative_research_cycle
 contact:
   - affiliation: "National Institute of Standards and Technology"
     email: gary.howarth@nist.gov
