@@ -1,0 +1,163 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "tx2019",
+            "records": 9276,
+            "features": 24
+        },
+        "deid": {
+            "filename": "ydata_fabric_synthesizers_full_missing_all_binary_MiriamSantos_1",
+            "records": 8000,
+            "features": 5,
+            "labels": {
+                "team": "YData",
+                "submission timestamp": "7/7/2023 10:33:36",
+                "target dataset": "tx2019",
+                "algorithm name": "YData Fabric Synthesizers",
+                "variant label": "TX_full_missing_all_binary",
+                "submission number": 1,
+                "feature set name": "custom-features-5",
+                "library name": "YData Fabric Synthesizers",
+                "algorithm type": "neural net",
+                "privacy category": "non_dp",
+                "features list": "SEX, OWN_RENT, DPHY, DEYE, DEAR",
+                "deid data id": "897d22d1538b72f309ac60bc647ee9f486d27bb0",
+                "privacy label detail": "",
+                "research papers": ""
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "DPHY",
+                "Feature Description": "Ambulatory (walking) difficulty",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DEYE",
+                "Feature Description": "Vision difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "DEAR",
+                "Feature Description": "Hearing difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "SEX": {
+                "counts": "univariate/SEX.csv",
+                "plot": "univariate/SEX.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "DEAR": {
+                "counts": "univariate/DEAR.csv",
+                "plot": "univariate/DEAR.jpg"
+            },
+            "DPHY": {
+                "counts": "univariate/DPHY.csv",
+                "plot": "univariate/DPHY.jpg"
+            },
+            "DEYE": {
+                "counts": "univariate/DEYE.csv",
+                "plot": "univariate/DEYE.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/diff.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/diff.csv",
+            "plot": "pearson_correlation/diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/error.csv",
+            "sub_sampling_equivalent": 70,
+            "k_marginal_score": 996
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.00041319605076814273,
+        "propensity_distribution": "propensity/propensity_distribution.csv",
+        "plot": "propensity/propensity_distribution.jpg"
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {}
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": []
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 3,
+        "percent records matched in target data": 60.0,
+        "unique target records": 5,
+        "percent unique target records": 0.05
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/result.csv",
+        "plot": "apparent_match_distribution/dist.jpg"
+    },
+    "created_on": "September 05, 2023 13:18:10"
+}

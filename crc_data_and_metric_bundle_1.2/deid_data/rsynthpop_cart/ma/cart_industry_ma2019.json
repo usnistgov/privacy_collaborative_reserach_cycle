@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e3a74119405299a724edefa0ef53c763173bc5ace870f77c6e5267942259e4b
-size 1017
+{
+    "labels": {
+        "algorithm name": "cart",
+        "target dataset": "ma2019",
+        "variant label": "maxfaclevels: 300",
+        "algorithm type": "stat model",
+        "library name": "rsynthpop",
+        "feature set name": "industry-focused",
+        "privacy category": "non_dp",
+        "deid data id": "dde7ecbf0a1e39a35314e638f2fe6f55cfc68fe4",
+        "features list": "PUMA, SEX, MSP, HISP, RAC1P, OWN_RENT, INDP_CAT, EDU, PINCP_DECILE",
+        "privacy label detail": "Non-differentially private synthetic data.  Produced using a fully conditional multilple imputation algorithm comprised of a sequence of decision trees trained on the target data.  Each  feature value in a given record is synthesized one at a time: the values of the preceding synthesized features are fed into the decision tree trained to predict the current feature.  ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.18637/jss.v074.i11"
+    }
+}

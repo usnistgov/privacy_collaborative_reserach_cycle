@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3b5779798fea66289dce05830be6ed1b48e8f55e7b8322fbaaad4067b5ef840
-size 897
+{
+    "labels": {
+        "algorithm name": "ctgan",
+        "target dataset": "national2019",
+        "variant label": "2",
+        "algorithm type": "neural net",
+        "library name": "sdv",
+        "feature set name": "all-features",
+        "privacy category": "non_dp",
+        "deid data id": "7daae1b39e268e5a10137139d16afb95244aa6ff",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "The CTGAN Synthesizer uses GAN-based, deep learning methods to train a model and generate synthetic data.  It generates non-differentially private synthetic data.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.48550/arXiv.1907.00503"
+    }
+}

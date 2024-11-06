@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f83e48fa043244351307d134db195061610a437c30c8964bb8d5deaf54e5270
-size 920
+{
+    "labels": {
+        "algorithm name": "patectgan",
+        "library name": "smartnoise-synth",
+        "feature set name": "family-focused",
+        "target dataset": "tx2019",
+        "variant label": "preprocessor-epsilon: 1.5",
+        "epsilon": "5",
+        "algorithm type": "neural net",
+        "privacy category": "dp",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "deid data id": "805718ececeaa8e9ee2ffd008db3134fedd4a59a",
+        "team": "CRC",
+        "privacy label detail": "Conditional tabular GAN using Private Aggregation of Teacher Ensembles. From \u201cPATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees\u201d and \u201cModeling Tabular data using Conditional GAN\u201d.",
+        "research papers": "https://openreview.net/forum?id=S1zk9iRqF7",
+        "submission timestamp": "9/5/2023 00:00:00"
+    }
+}

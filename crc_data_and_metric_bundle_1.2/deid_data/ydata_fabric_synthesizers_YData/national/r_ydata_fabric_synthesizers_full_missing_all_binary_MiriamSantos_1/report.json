@@ -1,0 +1,163 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "national2019",
+            "records": 27253,
+            "features": 24
+        },
+        "deid": {
+            "filename": "ydata_fabric_synthesizers_full_missing_all_binary_MiriamSantos_1",
+            "records": 28000,
+            "features": 5,
+            "labels": {
+                "team": "YData",
+                "submission timestamp": "7/7/2023 10:33:36",
+                "target dataset": "national2019",
+                "algorithm name": "YData Fabric Synthesizers",
+                "variant label": "NA_full_missing_all_binary",
+                "submission number": 1,
+                "feature set name": "custom-features-5",
+                "library name": "ydata-sdk",
+                "algorithm type": "neural net",
+                "privacy category": "non_dp",
+                "features list": "SEX, OWN_RENT, DPHY, DEYE, DEAR",
+                "deid data id": "5e27a2e2e2c2ec8ec8fecd73f86b3810656a5c6f",
+                "privacy label detail": "These CRC submissions were made with High-Fidelity settings and use the original Deep NN architecture and optimal parameters to produce non-differentially private synthetic data. The YData Fabric Synthesizer tool also has embedded options for user selection of High-Privacy and Balanced Fidelity-Privacy; those options use a differential privacy mechanism to inject noise into the process of synthetic data generation.  More information in the public documentation (https://docs.sdk.ydata.ai/0.6/examples/synthesize_with_anonymization/)",
+                "research papers": ""
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "DPHY",
+                "Feature Description": "Ambulatory (walking) difficulty",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DEYE",
+                "Feature Description": "Vision difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "DEAR",
+                "Feature Description": "Hearing difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "DPHY": {
+                "counts": "univariate/DPHY.csv",
+                "plot": "univariate/DPHY.jpg"
+            },
+            "SEX": {
+                "counts": "univariate/SEX.csv",
+                "plot": "univariate/SEX.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "DEAR": {
+                "counts": "univariate/DEAR.csv",
+                "plot": "univariate/DEAR.jpg"
+            },
+            "DEYE": {
+                "counts": "univariate/DEYE.csv",
+                "plot": "univariate/DEYE.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/diff.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/diff.csv",
+            "plot": "pearson_correlation/diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/error.csv",
+            "sub_sampling_equivalent": 80,
+            "k_marginal_score": 998
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.00013819267110741422,
+        "propensity_distribution": "propensity/propensity_distribution.csv",
+        "plot": "propensity/propensity_distribution.jpg"
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {}
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": []
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 0,
+        "percent records matched in target data": 0.0,
+        "unique target records": 3,
+        "percent unique target records": 0.01
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/result.csv",
+        "plot": "apparent_match_distribution/dist.jpg"
+    },
+    "created_on": "September 05, 2023 13:17:51"
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c80832a974401ea0d0f97becc4f88760c1c057f89a28fd9116f53ae6016e31c
-size 1005
+{
+    "labels": {
+        "algorithm name": "subsample_40pcnt",
+        "target dataset": "ma2019",
+        "variant label": "",
+        "algorithm type": "sdc",
+        "library name": "subsample",
+        "feature set name": "all-features",
+        "privacy category": "sdc",
+        "deid data id": "f12e8ac0afef10b14f09bd9e41af2b5626e0f6f6",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "A simple uniform random 40% subsample of the target data.  It provides limited privacy by redacting records at random, allowing survey takers to deny that their information was included in the public release.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_pums_handbook_2021_ch01.pdf"
+    }
+}

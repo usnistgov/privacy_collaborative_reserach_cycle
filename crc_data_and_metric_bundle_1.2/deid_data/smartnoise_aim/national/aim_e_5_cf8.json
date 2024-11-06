@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4023bd3197a645f7fe66b325e8636bada7da4e9d593fb75cbb6dbaad5af7ee21
-size 1197
+{
+    "labels": {
+        "algorithm name": "aim",
+        "library name": "smartnoise-synth",
+        "feature set name": "demographic-focused-except-AGEP-DEYE",
+        "target dataset": "national2019",
+        "variant label": "preprocessor-epsilon: 0.3",
+        "epsilon": "5",
+        "algorithm type": "stat model",
+        "privacy category": "dp",
+        "team": "CRC",
+        "submission timestamp": "9/5/2023 00:00:00",
+        "privacy label detail": "AIM is a workload-adaptive algorithm that first selects a set of queries, then measures those queries with added noise to satisfy differential privacy, and finally generates synthetic data from the noisy measurements. It uses a set of innovative features to iteratively select the most useful measurements, reflecting both their relevance to the workload and their value in approximating the input data. We also provide analytic expressions to bound per-query error with high probability. ",
+        "research papers": "https://doi.org/10.48550/arXiv.2201.12677",
+        "features list": "SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET",
+        "deid data id": "fb6965e304123a0e42b64c47c4b32ad874cbceff"
+    }
+}

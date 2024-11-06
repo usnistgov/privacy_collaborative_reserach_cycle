@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:903263d44c2a52a3f01a200bd18b6fa2c613997928a63f3d87b17bc773ab29cc
-size 1174
+{
+    "labels": {
+        "team": "DCAI Community",
+        "submission timestamp": "7/6/2023 10:05:05",
+        "target dataset": "ma2019",
+        "algorithm name": "ctgan",
+        "variant label": "ydata-synthetic_ctgan_ma_synthetic_dataset",
+        "submission number": 1,
+        "feature set name": "simple-features-except-PINCP-POVPIP",
+        "library name": "ydata-synthetic",
+        "algorithm type": "neural net",
+        "privacy category": "non_dp",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP_CAT, EDU, PINCP_DECILE, DVET, DREM, DPHY, DEYE, DEAR",
+        "deid data id": "26853498ddab5c18376dfcb3c3449cab377a6549",
+        "privacy label detail": "The approach consists of a fully synthetic dataset. CTGAN contributes to data privacy through synthetic data generation. It learns the statistical characteristics and dependencies of the original data through a generative adversarial network and then generates (non-differentially private) synthetic data that closely resembles the original data distribution.  ",
+        "research papers": "https://doi.org/10.48550/arXiv.1907.00503"
+    }
+}

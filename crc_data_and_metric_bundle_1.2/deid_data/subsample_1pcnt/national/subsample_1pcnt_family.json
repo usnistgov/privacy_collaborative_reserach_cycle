@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a14067047b6e6e62e221babcc12b556eadc90cdd2c24c2d63b8b45692cb5e19
-size 918
+{
+    "labels": {
+        "algorithm name": "subsample_1pcnt",
+        "target dataset": "national2019",
+        "variant label": "",
+        "algorithm type": "sdc",
+        "library name": "subsample",
+        "feature set name": "family-focused",
+        "privacy category": "sdc",
+        "privacy label detail": "A simple uniform random 1% subsample of the target data.   It provides limited privacy by redacting records at random, allowing survey takers to deny that their information was included in the public release.",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "deid data id": "329febcfd479c788ee1aa0d6b8b7f0f89d60b021",
+        "submission timestamp": "6/16/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_pums_handbook_2021_ch01.pdf"
+    }
+}

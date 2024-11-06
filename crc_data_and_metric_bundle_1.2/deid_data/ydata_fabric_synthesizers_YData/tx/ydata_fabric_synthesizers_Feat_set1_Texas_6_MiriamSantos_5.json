@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:914cd8b00d9649f080824da6c1bf63d209bb41c5907019991ad5c432d8765b30
-size 1218
+{
+    "labels": {
+        "team": "YData",
+        "submission timestamp": "7/7/2023 14:33:04",
+        "target dataset": "tx2019",
+        "algorithm name": "YData Fabric Synthesizers",
+        "variant label": "Feat_set1_Texas_6",
+        "submission number": 5,
+        "feature set name": "demographic-focused-except-PINCP_DECILE-EDU",
+        "library name": "ydata-sdk",
+        "algorithm type": "neural net",
+        "privacy category": "non_dp",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, DVET, DEYE",
+        "deid data id": "193b61affe90354db0aad09b855d851257f84210",
+        "privacy label detail": "These CRC submissions were made with High-Fidelity settings and use the original Deep NN architecture and optimal parameters to produce non-differentially private synthetic data. The YData Fabric Synthesizer tool also has embedded options for user selection of High-Privacy and Balanced Fidelity-Privacy; those options use a differential privacy mechanism to inject noise into the process of synthetic data generation.  More information in the public documentation (https://docs.sdk.ydata.ai/0.6/examples/synthesize_with_anonymization/)",
+        "research papers": ""
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:662041c8168f7a802fc1e6f8e0acaa54d3b93b46d8bf86a26569bef9ebf207e7
-size 967
+{
+    "labels": {
+        "team": "Aindo",
+        "submission timestamp": "10/10/2023 7:15:19",
+        "deid data id": "3b3063e18ee66aea128e22e1927ccbf183aee7d8",
+        "feature set name": "all-features",
+        "features list": "AGEP, DEAR, DENSITY, DEYE, DPHY, DREM, DVET, EDU, HISP, HOUSING_TYPE, INDP, INDP_CAT, MSP, NOC, NPF, OWN_RENT, PINCP, PINCP_DECILE, POVPIP, PUMA, PWGTP, RAC1P, SEX, WGTP",
+        "target dataset": "ma2019",
+        "library name": "aindo-synth",
+        "algorithm name": "aindo-synth",
+        "variant label": "default",
+        "submission number": "1",
+        "privacy label detail": "Our model learns the distribution of the original data and performs validation during training, to guarantee generalization and avoid overfitting. Synthetic data is generated from scratch using the learned generative model.",
+        "algorithm type": "neural net",
+        "privacy category": "non_dp",
+        "research papers": ""
+    }
+}

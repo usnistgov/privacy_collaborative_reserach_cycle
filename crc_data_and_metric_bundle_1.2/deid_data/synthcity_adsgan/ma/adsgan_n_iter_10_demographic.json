@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61de651a3aed6613d63c627989a85ee1031bed8fc78c7728f3f09da1a7050050
-size 1017
+{
+    "labels": {
+        "algorithm name": "adsgan",
+        "target dataset": "ma2019",
+        "variant label": "n_iter=10, target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "algorithm type": "neural net",
+        "library name": "synthcity",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "4fbe7de6fdd1a245851397e75c49781d22bb6982",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "A conditional GAN framework that generates synthetic data while minimize patient identifiability that is defined based on the probability of re-identification given the combination of all data on any individual patient.  ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.1109/jbhi.2020.2980262"
+    }
+}

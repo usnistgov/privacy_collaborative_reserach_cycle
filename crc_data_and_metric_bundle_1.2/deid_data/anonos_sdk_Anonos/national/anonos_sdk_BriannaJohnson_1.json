@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d235a8b70031e506da61671dcb0b9e8561238830209b24f498b656601244f43
-size 825
+{
+    "labels": {
+        "team": "Anonos",
+        "submission timestamp": "7/17/2023 11:20:15",
+        "target dataset": "national2019",
+        "algorithm name": "Anonos Data Embassy SDK",
+        "variant label": "national2019-synthetic",
+        "submission number": 1,
+        "feature set name": "all-features",
+        "library name": "Anonos Data Embassy SDK",
+        "algorithm type": "neural net",
+        "privacy category": "non_dp",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "deid data id": "4ef4811cf2a7727a08bb621a2450cbe47e352071",
+        "privacy label detail": "Synthetic data, not formally private.",
+        "research papers": ""
+    }
+}

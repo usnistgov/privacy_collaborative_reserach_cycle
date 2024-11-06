@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:730d8c18cbc450cf2bbd9d192ebbc21a1cd7519315a990c01770a2d477d899b3
-size 998
+{
+    "labels": {
+        "algorithm name": "pacsynth",
+        "target dataset": "national2019",
+        "epsilon": "1",
+        "variant label": "preprocessor-epsilon: 0.3",
+        "algorithm type": "query matching",
+        "library name": "smartnoise-synth",
+        "feature set name": "demographic-focused",
+        "privacy category": "dp",
+        "deid data id": "8e560a74f5748dbb17872f48907931476703ee8f",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "The pac-synth synthesizer will suppress marginal combinations that could uniquely fingerprint individuals (similar to k-anonymity). pac-synth is a differentially-private synthesizer that computes differentially private marginals to build synthetic data.   ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://github.com/microsoft/synthetic-data-showcase/tree/main/docs/dp"
+    }
+}

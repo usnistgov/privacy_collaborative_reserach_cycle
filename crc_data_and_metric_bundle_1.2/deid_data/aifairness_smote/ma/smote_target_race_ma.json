@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:550c772f53722a9a7a6e6017fd3dfbf4178ba3ae591622e747ef389038c1f049
-size 1304
+{
+    "labels": {
+        "team": "UT Dallas DSPL",
+        "algorithm name": "smote",
+        "library name": "UTDallas-AIFairness",
+        "feature set name": "all-features",
+        "target dataset": "ma2019",
+        "variant label": "target race",
+        "algorithm type": "geometric",
+        "privacy category": "non_dp",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "deid data id": "9068dc087e257a0b7b88bf602c175b0da995f6cf",
+        "submission timestamp": "9/5/2023 00:00:00",
+        "privacy label detail": "The Synthetic Minority Oversampling Technique (SMOTE) approach considers each record in the target data as a point in the feature space (i.e., in a schema with F features, this is an F-dimensional cartersian space with one axis per feature). It then uses a geometric technique such as linear interpolation or k-means clustering to select new points which lie between existing target points.  These new points comprise non-differentially private synthetic data which is very unlikely to contain individuals from the original target data. ",
+        "research papers": "https://doi.org/10.1137/1.9781611977653.ch98"
+    }
+}

@@ -50,9 +50,9 @@ crc_data_and_metric_bundle_1.2
 	notebooks					        # tutorial ipython notebooks to demonstrate navigating the archive.
 	diverse_communities_data_excerpts                       # ground truth target data
 ```
-Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
+Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder (starting with *'r_'* words) contains metric results from the sdnist evaluation of the data.  
 
-Within the report folder you will find subfolders containing .csv results for each metric, and a report.json file with complete metric results for the full report. The report.html file displays the metric results as a user friendly visual report, including metric documentation, definitions and citations.
+Within the report folder (starting with *'r_'*) you will find subfolders containing .csv results for each metric, and a report.json file with complete metric results for the full report. The report.html file displays the metric results as a user friendly visual report, including metric documentation, definitions and citations.
 
 ## How can I use these data? 
 

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48d7e36264d33a67c51029a3835942cdd1f13225dc11176a1b23ef33d1a05087
-size 798
+{
+    "labels": {
+        "team": "CBS-NL",
+        "submission timestamp": "4/16/2023 12:03:58",
+        "target dataset": "ma2019",
+        "algorithm name": "ctgan",
+        "variant label": "epochs=500",
+        "submission number": 1,
+        "algorithm type": "neural net",
+        "library name": "sdv",
+        "feature set name": "all-features",
+        "privacy category": "non_dp",
+        "deid data id": "e7c7a2f85d1c8b1b6d3d451d366c04f04e461419",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "No privacy guarantee used",
+        "research papers": "https://doi.org/10.48550/arXiv.1907.00503"
+    }
+}

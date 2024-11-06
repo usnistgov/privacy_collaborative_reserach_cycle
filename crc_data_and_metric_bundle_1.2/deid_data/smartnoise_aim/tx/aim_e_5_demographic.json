@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89cd98026738540d072cec671b1dea2b82dfb854e62b021333803cfa0c76c631
-size 1186
+{
+    "labels": {
+        "algorithm name": "aim",
+        "library name": "smartnoise-synth",
+        "feature set name": "demographic-focused",
+        "target dataset": "tx2019",
+        "variant label": "preprocessor-epsilon: 1.5",
+        "epsilon": "5",
+        "algorithm type": "stat model",
+        "privacy category": "dp",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "deid data id": "fc19e2743bc0e905611266506efedf2ed859b65c",
+        "team": "CRC",
+        "submission timestamp": "9/5/2023 00:00:00",
+        "privacy label detail": "AIM is a workload-adaptive algorithm that first selects a set of queries, then measures those queries with added noise to satisfy differential privacy, and finally generates synthetic data from the noisy measurements. It uses a set of innovative features to iteratively select the most useful measurements, reflecting both their relevance to the workload and their value in approximating the input data. We also provide analytic expressions to bound per-query error with high probability. ",
+        "research papers": "https://doi.org/10.48550/arXiv.2201.12677"
+    }
+}

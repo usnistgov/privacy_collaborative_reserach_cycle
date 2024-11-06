@@ -1,0 +1,399 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "ma2019",
+            "records": 7634,
+            "features": 24
+        },
+        "deid": {
+            "filename": "aim_e_10_industry",
+            "records": 7634,
+            "features": 9,
+            "labels": {
+                "algorithm name": "aim",
+                "library name": "smartnoise-synth",
+                "feature set name": "industry-focused",
+                "target dataset": "ma2019",
+                "variant label": "preprocessor-epsilon: 3.0",
+                "epsilon": "10",
+                "algorithm type": "stat model",
+                "privacy category": "dp",
+                "features list": "PUMA, SEX, MSP, HISP, RAC1P, OWN_RENT, INDP_CAT, EDU, PINCP_DECILE",
+                "deid data id": "c3390d42d0fbff280f0f91e756dff504161374c9",
+                "team": "CRC",
+                "submission timestamp": "9/5/2023 00:00:00",
+                "privacy label detail": "AIM is a workload-adaptive algorithm that first selects a set of queries, then measures those queries with added noise to satisfy differential privacy, and finally generates synthetic data from the noisy measurements. It uses a set of innovative features to iteratively select the most useful measurements, reflecting both their relevance to the workload and their value in approximating the input data. We also provide analytic expressions to bound per-query error with high probability. ",
+                "research papers": "https://doi.org/10.48550/arXiv.2201.12677"
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "PUMA",
+                "Feature Description": "Public use microdata area code",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "MSP",
+                "Feature Description": "Marital Status",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "HISP",
+                "Feature Description": "Hispanic origin",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "RAC1P",
+                "Feature Description": "Person's Race",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "INDP_CAT",
+                "Feature Description": "Industry categories",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "EDU",
+                "Feature Description": "Educational attainment",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "PINCP_DECILE",
+                "Feature Description": "Person's total income rank (with respect to their state) discretized into 10% bins.",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "PINCP_DECILE": {
+                "counts": "univariate/PINCP_DECILE.csv",
+                "plot": "univariate/PINCP_DECILE.jpg"
+            },
+            "MSP": {
+                "counts": "univariate/MSP.csv",
+                "plot": "univariate/MSP.jpg"
+            },
+            "EDU": {
+                "counts": "univariate/EDU.csv",
+                "plot": "univariate/EDU.jpg"
+            },
+            "INDP_CAT": {
+                "counts": "univariate/INDP_CAT.csv",
+                "plot": "univariate/INDP_CAT.jpg"
+            },
+            "RAC1P": {
+                "counts": "univariate/RAC1P.csv",
+                "plot": "univariate/RAC1P.jpg"
+            },
+            "PUMA": {
+                "counts": "univariate/PUMA.csv",
+                "plot": "univariate/PUMA.jpg"
+            },
+            "SEX": {
+                "counts": "univariate/SEX.csv",
+                "plot": "univariate/SEX.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "HISP": {
+                "counts": "univariate/HISP.csv",
+                "plot": "univariate/HISP.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/diff.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/diff.csv",
+            "plot": "pearson_correlation/diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/error.csv",
+            "sub_sampling_equivalent": 50,
+            "k_marginal_score": 949,
+            "score_in_each_puma": "k_marginal_synopsys/score.csv"
+        }
+    },
+    "worst_PUMA_breakdown": {
+        "worst_2_puma_univariate": {
+            "divergence": "k_marginal_breakdown/univariate/divergence.csv",
+            "counts": {
+                "PINCP_DECILE": {
+                    "counts": "k_marginal_breakdown/univariate/PINCP_DECILE.csv",
+                    "plot": "k_marginal_breakdown/univariate/PINCP_DECILE.jpg"
+                },
+                "MSP": {
+                    "counts": "k_marginal_breakdown/univariate/MSP.csv",
+                    "plot": "k_marginal_breakdown/univariate/MSP.jpg"
+                },
+                "INDP_CAT": {
+                    "counts": "k_marginal_breakdown/univariate/INDP_CAT.csv",
+                    "plot": "k_marginal_breakdown/univariate/INDP_CAT.jpg"
+                },
+                "SEX": {
+                    "counts": "k_marginal_breakdown/univariate/SEX.csv",
+                    "plot": "k_marginal_breakdown/univariate/SEX.jpg"
+                },
+                "EDU": {
+                    "counts": "k_marginal_breakdown/univariate/EDU.csv",
+                    "plot": "k_marginal_breakdown/univariate/EDU.jpg"
+                },
+                "OWN_RENT": {
+                    "counts": "k_marginal_breakdown/univariate/OWN_RENT.csv",
+                    "plot": "k_marginal_breakdown/univariate/OWN_RENT.jpg"
+                },
+                "RAC1P": {
+                    "counts": "k_marginal_breakdown/univariate/RAC1P.csv",
+                    "plot": "k_marginal_breakdown/univariate/RAC1P.jpg"
+                },
+                "HISP": {
+                    "counts": "k_marginal_breakdown/univariate/HISP.csv",
+                    "plot": "k_marginal_breakdown/univariate/HISP.jpg"
+                },
+                "PUMA": {
+                    "counts": "k_marginal_breakdown/univariate/PUMA.csv",
+                    "plot": "k_marginal_breakdown/univariate/PUMA.jpg"
+                }
+            }
+        },
+        "worst_2_puma_k_marginal_scores": "k_marginal_breakdown/worst_puma.csv",
+        "correlation_difference": {
+            "pearson_correlation_difference": {
+                "correlation_difference": "k_marginal_breakdown/pearson_correlation/diff.csv",
+                "plot": "k_marginal_breakdown/pearson_correlation/diff.jpg"
+            }
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.0039921203196262535,
+        "propensity_distribution": "propensity/propensity_distribution.csv",
+        "plot": "propensity/propensity_distribution.jpg"
+    },
+    "linear_regression": {
+        "total_population": {
+            "target_counts": "linear_regression/total_population/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/total_population/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/total_population/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.62,
+                0.12
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.61,
+                0.19
+            ]
+        },
+        "white_men": {
+            "target_counts": "linear_regression/white_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/white_men/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/white_men/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.63,
+                0.8
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.65,
+                0.71
+            ]
+        },
+        "white_women": {
+            "target_counts": "linear_regression/white_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/white_women/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/white_women/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.59,
+                -0.18
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.56,
+                -0.0
+            ]
+        },
+        "black_men": {
+            "target_counts": "linear_regression/black_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/black_men/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/black_men/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.72,
+                -1.31
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.81,
+                -1.53
+            ]
+        },
+        "black_women": {
+            "target_counts": "linear_regression/black_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/black_women/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/black_women/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.7,
+                -1.07
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.41,
+                0.35
+            ]
+        },
+        "asian_men": {
+            "target_counts": "linear_regression/asian_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/asian_men/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/asian_men/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.83,
+                -1.31
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.78,
+                -1.13
+            ]
+        },
+        "asian_women": {
+            "target_counts": "linear_regression/asian_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/asian_women/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/asian_women/plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.64,
+                -1.43
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.62,
+                -1.59
+            ]
+        },
+        "aiannh_men": {
+            "target_counts": "linear_regression/aiannh_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/aiannh_men/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/aiannh_men/plot.svg",
+            "target_regression_slope_and_intercept": [
+                -0.83,
+                7.33
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.87,
+                -4.0
+            ]
+        },
+        "aiannh_women": {
+            "target_counts": "linear_regression/aiannh_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/aiannh_women/diff.csv",
+            "target_deidentified_difference_plot": "linear_regression/aiannh_women/plot.svg",
+            "target_regression_slope_and_intercept": [
+                -0.5,
+                5.17
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                -0.04,
+                1.9
+            ]
+        }
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {
+            "MSP-MSP_N-Children (AGEP < 15)": [
+                "pca/target_highlighted_MSP/MSP_N.png",
+                "pca/deidentified_highlighted_MSP/MSP_N.png"
+            ]
+        }
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": [
+                {
+                    "inconsistency_name": "adult_child",
+                    "inconsistency_description": "Even when the AGEP feature is not explicitly used, features which use N to indicate children ( < 15) must agree",
+                    "inconsistency_features": [
+                        "MSP",
+                        "PINCP",
+                        "PINCP_DECILE"
+                    ],
+                    "inconsistency_violations": 7,
+                    "inconsistent_data_indexes": [
+                        1249,
+                        2098,
+                        3133,
+                        3190,
+                        3349,
+                        6816,
+                        6895
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/adult_child_example.csv"
+                }
+            ]
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 7,
+                "Percent Records Inconsistent": 0.1
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 825,
+        "percent records matched in target data": 19.34,
+        "unique target records": 4265,
+        "percent unique target records": 55.87
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/result.csv",
+        "plot": "apparent_match_distribution/dist.jpg"
+    },
+    "created_on": "September 05, 2023 13:18:55"
+}

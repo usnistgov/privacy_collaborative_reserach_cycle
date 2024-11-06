@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c9684e801f92978b31479c182f15fb26ff7be33d6e70d909d1d7081831c4bc6
-size 873
+{
+    "labels": {
+        "algorithm name": "mst",
+        "library name": "smartnoise-synth",
+        "feature set name": "demographic-focused",
+        "target dataset": "national2019",
+        "variant label": "preprocessor-epsilon: 1.5",
+        "epsilon": "5",
+        "algorithm type": "stat model",
+        "privacy category": "dp",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "deid data id": "46bb7492cd13843cfd309086bff581a87c6aadc3",
+        "team": "CRC",
+        "privacy label detail": "Differentially private synthetic data.  From McKenna et al. \u201cWinning the NIST Contest: A scalable and general approach to differentially private synthetic data\u201d",
+        "research papers": "https://doi.org/10.48550/arXiv.2108.04978",
+        "submission timestamp": "9/5/2023 00:00:00"
+    }
+}

@@ -1,0 +1,611 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "national2019",
+            "records": 27253,
+            "features": 24
+        },
+        "deid": {
+            "filename": "aim_e_10_family",
+            "records": 27253,
+            "features": 11,
+            "labels": {
+                "algorithm name": "aim",
+                "library name": "smartnoise-synth",
+                "feature set name": "family-focused",
+                "target dataset": "national2019",
+                "variant label": "preprocessor-epsilon: 3.0",
+                "epsilon": "10",
+                "algorithm type": "stat model",
+                "privacy category": "dp",
+                "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+                "deid data id": "08b818aec3732a76e8ff3aa5de06559607d70c8a",
+                "team": "CRC",
+                "submission timestamp": "9/5/2023 00:00:00",
+                "privacy label detail": "AIM is a workload-adaptive algorithm that first selects a set of queries, then measures those queries with added noise to satisfy differential privacy, and finally generates synthetic data from the noisy measurements. It uses a set of innovative features to iteratively select the most useful measurements, reflecting both their relevance to the workload and their value in approximating the input data. We also provide analytic expressions to bound per-query error with high probability. ",
+                "research papers": "https://doi.org/10.48550/arXiv.2201.12677"
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "PUMA",
+                "Feature Description": "Public use microdata area code",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "AGEP",
+                "Feature Description": "Person's age",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "MSP",
+                "Feature Description": "Marital Status",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "HISP",
+                "Feature Description": "Hispanic origin",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "RAC1P",
+                "Feature Description": "Person's Race",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "NOC",
+                "Feature Description": "Number of own children in household (unweighted)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "NPF",
+                "Feature Description": "Number of persons in family (unweighted)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "PINCP_DECILE",
+                "Feature Description": "Person's total income rank (with respect to their state) discretized into 10% bins.",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "POVPIP",
+                "Feature Description": "Income-to-poverty ratio (ex: 250 = 2.5 x poverty line)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "PUMA": {
+                "counts": "univariate/PUMA.csv",
+                "plot": "univariate/PUMA.jpg"
+            },
+            "AGEP": {
+                "counts": "univariate/AGEP.csv",
+                "plot": "univariate/AGEP.jpg"
+            },
+            "PINCP_DECILE": {
+                "counts": "univariate/PINCP_DECILE.csv",
+                "plot": "univariate/PINCP_DECILE.jpg"
+            },
+            "NPF": {
+                "counts": "univariate/NPF.csv",
+                "plot": "univariate/NPF.jpg"
+            },
+            "MSP": {
+                "counts": "univariate/MSP.csv",
+                "plot": "univariate/MSP.jpg"
+            },
+            "POVPIP": {
+                "counts": "univariate/POVPIP.csv",
+                "plot": "univariate/POVPIP.jpg"
+            },
+            "RAC1P": {
+                "counts": "univariate/RAC1P.csv",
+                "plot": "univariate/RAC1P.jpg"
+            },
+            "HISP": {
+                "counts": "univariate/HISP.csv",
+                "plot": "univariate/HISP.jpg"
+            },
+            "NOC": {
+                "counts": "univariate/NOC.csv",
+                "plot": "univariate/NOC.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "SEX": {
+                "counts": "univariate/SEX.csv",
+                "plot": "univariate/SEX.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/diff.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/diff.csv",
+            "plot": "pearson_correlation/diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/error.csv",
+            "sub_sampling_equivalent": 20,
+            "k_marginal_score": 887,
+            "score_in_each_puma": "k_marginal_synopsys/score.csv"
+        }
+    },
+    "worst_PUMA_breakdown": {
+        "worst_5_puma_univariate": {
+            "divergence": "k_marginal_breakdown/univariate/divergence.csv",
+            "counts": {
+                "AGEP": {
+                    "counts": "k_marginal_breakdown/univariate/AGEP.csv",
+                    "plot": "k_marginal_breakdown/univariate/AGEP.jpg"
+                },
+                "POVPIP": {
+                    "counts": "k_marginal_breakdown/univariate/POVPIP.csv",
+                    "plot": "k_marginal_breakdown/univariate/POVPIP.jpg"
+                },
+                "NPF": {
+                    "counts": "k_marginal_breakdown/univariate/NPF.csv",
+                    "plot": "k_marginal_breakdown/univariate/NPF.jpg"
+                },
+                "NOC": {
+                    "counts": "k_marginal_breakdown/univariate/NOC.csv",
+                    "plot": "k_marginal_breakdown/univariate/NOC.jpg"
+                },
+                "PINCP_DECILE": {
+                    "counts": "k_marginal_breakdown/univariate/PINCP_DECILE.csv",
+                    "plot": "k_marginal_breakdown/univariate/PINCP_DECILE.jpg"
+                },
+                "PUMA": {
+                    "counts": "k_marginal_breakdown/univariate/PUMA.csv",
+                    "plot": "k_marginal_breakdown/univariate/PUMA.jpg"
+                },
+                "MSP": {
+                    "counts": "k_marginal_breakdown/univariate/MSP.csv",
+                    "plot": "k_marginal_breakdown/univariate/MSP.jpg"
+                },
+                "RAC1P": {
+                    "counts": "k_marginal_breakdown/univariate/RAC1P.csv",
+                    "plot": "k_marginal_breakdown/univariate/RAC1P.jpg"
+                },
+                "OWN_RENT": {
+                    "counts": "k_marginal_breakdown/univariate/OWN_RENT.csv",
+                    "plot": "k_marginal_breakdown/univariate/OWN_RENT.jpg"
+                },
+                "HISP": {
+                    "counts": "k_marginal_breakdown/univariate/HISP.csv",
+                    "plot": "k_marginal_breakdown/univariate/HISP.jpg"
+                },
+                "SEX": {
+                    "counts": "k_marginal_breakdown/univariate/SEX.csv",
+                    "plot": "k_marginal_breakdown/univariate/SEX.jpg"
+                }
+            }
+        },
+        "worst_5_puma_k_marginal_scores": "k_marginal_breakdown/worst_puma.csv",
+        "correlation_difference": {
+            "pearson_correlation_difference": {
+                "correlation_difference": "k_marginal_breakdown/pearson_correlation/diff.csv",
+                "plot": "k_marginal_breakdown/pearson_correlation/diff.jpg"
+            }
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.0019535358509960472,
+        "propensity_distribution": "propensity/propensity_distribution.csv",
+        "plot": "propensity/propensity_distribution.jpg"
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {
+            "MSP-MSP_N-Children (AGEP < 15)": [
+                "pca/target_highlighted_MSP/MSP_N.png",
+                "pca/deidentified_highlighted_MSP/MSP_N.png"
+            ]
+        }
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": [
+                {
+                    "inconsistency_name": "child_MSP",
+                    "inconsistency_description": "Children (< 15) can't be married",
+                    "inconsistency_features": [
+                        "AGEP",
+                        "MSP"
+                    ],
+                    "inconsistency_violations": 59,
+                    "inconsistent_data_indexes": [
+                        1512,
+                        1801,
+                        2026,
+                        2684,
+                        2761,
+                        3242,
+                        3848,
+                        4425,
+                        4593,
+                        5362,
+                        5388,
+                        7534,
+                        8195,
+                        8629,
+                        8797,
+                        9190,
+                        9265,
+                        9300,
+                        9484,
+                        9877,
+                        10249,
+                        10736,
+                        10820,
+                        10943,
+                        11412,
+                        13315,
+                        14232,
+                        14440,
+                        14841,
+                        16080,
+                        16169,
+                        16915,
+                        17086,
+                        17126,
+                        17249,
+                        17292,
+                        17977,
+                        18106,
+                        19321,
+                        20029,
+                        20653,
+                        20769,
+                        20846,
+                        21542,
+                        21616,
+                        21638,
+                        22158,
+                        22362,
+                        22412,
+                        22804,
+                        23112,
+                        23331,
+                        23487,
+                        24184,
+                        24418,
+                        25991,
+                        26155,
+                        26528,
+                        26875
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/child_MSP_example.csv"
+                },
+                {
+                    "inconsistency_name": "child_PINCP_DECILE",
+                    "inconsistency_description": "Children (< 15) don't have personal incomes",
+                    "inconsistency_features": [
+                        "AGEP",
+                        "PINCP_DECILE"
+                    ],
+                    "inconsistency_violations": 81,
+                    "inconsistent_data_indexes": [
+                        1310,
+                        1512,
+                        1801,
+                        2026,
+                        2684,
+                        2761,
+                        2938,
+                        3242,
+                        3434,
+                        4425,
+                        4593,
+                        5362,
+                        5388,
+                        6081,
+                        6330,
+                        7534,
+                        8026,
+                        8195,
+                        8629,
+                        8797,
+                        9190,
+                        9265,
+                        9300,
+                        9484,
+                        9877,
+                        10249,
+                        10662,
+                        10736,
+                        10820,
+                        10943,
+                        11412,
+                        11707,
+                        12973,
+                        13238,
+                        13315,
+                        14232,
+                        14440,
+                        14841,
+                        14988,
+                        16080,
+                        16146,
+                        16169,
+                        16828,
+                        16915,
+                        17086,
+                        17126,
+                        17188,
+                        17249,
+                        17292,
+                        17434,
+                        17977,
+                        18106,
+                        19191,
+                        19321,
+                        20029,
+                        20106,
+                        20435,
+                        20653,
+                        20769,
+                        20846,
+                        21542,
+                        21616,
+                        21638,
+                        22158,
+                        22362,
+                        22404,
+                        22412,
+                        22804,
+                        23112,
+                        23331,
+                        23487,
+                        24059,
+                        24184,
+                        25003,
+                        25277,
+                        25991,
+                        26155,
+                        26354,
+                        26528,
+                        26853,
+                        26875
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/child_PINCP_DECILE_example.csv"
+                },
+                {
+                    "inconsistency_name": "adult_N",
+                    "inconsistency_description": "Adults ( > 14) must specify values (other than N) for all adult features",
+                    "inconsistency_features": [
+                        "AGEP",
+                        "MSP",
+                        "PINCP",
+                        "PINCP_DECILE",
+                        "EDU",
+                        "DPHY",
+                        "DREM"
+                    ],
+                    "inconsistency_violations": 87,
+                    "inconsistent_data_indexes": [
+                        49,
+                        713,
+                        836,
+                        869,
+                        943,
+                        1231,
+                        2832,
+                        3014,
+                        3240,
+                        3658,
+                        4359,
+                        4757,
+                        4909,
+                        5068,
+                        5198,
+                        5206,
+                        5581,
+                        5916,
+                        5992,
+                        6350,
+                        6454,
+                        6604,
+                        6610,
+                        7116,
+                        7133,
+                        7862,
+                        8202,
+                        8677,
+                        8754,
+                        9321,
+                        10022,
+                        10360,
+                        10882,
+                        11112,
+                        11204,
+                        11513,
+                        11640,
+                        11874,
+                        12311,
+                        12375,
+                        12664,
+                        12872,
+                        12970,
+                        13183,
+                        13391,
+                        13514,
+                        13559,
+                        13687,
+                        14025,
+                        14780,
+                        14784,
+                        14978,
+                        15207,
+                        15511,
+                        15601,
+                        16021,
+                        16394,
+                        16645,
+                        16750,
+                        17786,
+                        17898,
+                        18003,
+                        18495,
+                        19007,
+                        19156,
+                        19426,
+                        19628,
+                        19669,
+                        20159,
+                        20181,
+                        20582,
+                        20726,
+                        20935,
+                        20967,
+                        21675,
+                        22638,
+                        22765,
+                        23104,
+                        23186,
+                        23791,
+                        24026,
+                        24827,
+                        25400,
+                        25663,
+                        26074,
+                        26531,
+                        27063
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/adult_N_example.csv"
+                },
+                {
+                    "inconsistency_name": "too_many_children",
+                    "inconsistency_description": "Adults needed: Family size must be at least one greater than number of children",
+                    "inconsistency_features": [
+                        "NOC",
+                        "NPF"
+                    ],
+                    "inconsistency_violations": 43,
+                    "inconsistent_data_indexes": [
+                        167,
+                        791,
+                        1176,
+                        3031,
+                        3103,
+                        3864,
+                        5832,
+                        6454,
+                        6743,
+                        7605,
+                        8380,
+                        9163,
+                        9220,
+                        11120,
+                        11681,
+                        13483,
+                        13663,
+                        14061,
+                        14610,
+                        14675,
+                        15758,
+                        16284,
+                        16689,
+                        17570,
+                        19328,
+                        19920,
+                        19963,
+                        20014,
+                        20467,
+                        22002,
+                        22227,
+                        22381,
+                        22631,
+                        23136,
+                        24278,
+                        24401,
+                        24758,
+                        25052,
+                        25734,
+                        25990,
+                        26172,
+                        26449,
+                        27171
+                    ],
+                    "inconsistent_record_example": "inconsistencies/work/too_many_children_example.csv"
+                }
+            ]
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 170,
+                "Percent Records Inconsistent": 0.6
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 43,
+                "Percent Records Inconsistent": 0.2
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 694,
+        "percent records matched in target data": 2.9,
+        "unique target records": 23908,
+        "percent unique target records": 87.73
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/result.csv",
+        "plot": "apparent_match_distribution/dist.jpg"
+    },
+    "created_on": "September 05, 2023 13:22:32"
+}

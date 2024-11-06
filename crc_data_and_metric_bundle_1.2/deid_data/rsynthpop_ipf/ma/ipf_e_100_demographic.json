@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3bfd82f2ff7e8f8f33ecd582117822012ebd394fc67030724281810c2b3ee58
-size 732
+{
+    "labels": {
+        "algorithm name": "ipf",
+        "target dataset": "ma2019",
+        "variant label": "tol=0.01",
+        "epsilon": "100",
+        "submission number": 1,
+        "algorithm type": "query matching",
+        "library name": "rsynthpop",
+        "feature set name": "demographic-focused",
+        "privacy category": "dp",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "deid data id": "0a1820367d1ffa8358c8d21635f08c537555141c",
+        "team": "CRC",
+        "submission timestamp": "9/5/2023 00:00:00",
+        "privacy label detail": "differential privacy ",
+        "research papers": "https://doi.org/10.48550/arXiv.2206.01362"
+    }
+}

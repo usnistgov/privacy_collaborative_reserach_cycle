@@ -1,0 +1,1498 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "national2019",
+            "records": 27253,
+            "features": 24
+        },
+        "deid": {
+            "filename": "smote_target_marital_na",
+            "records": 27253,
+            "features": 24,
+            "labels": {
+                "team": "UT Dallas DSPL",
+                "algorithm name": "smote",
+                "library name": "UTDallas-AIFairness",
+                "feature set name": "all-features",
+                "target dataset": "national2019",
+                "variant label": "target marital",
+                "algorithm type": "geometric",
+                "privacy category": "non_dp",
+                "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+                "deid data id": "abd45fc10d9f20f86125c1125a39a9ea391d6349",
+                "submission timestamp": "9/5/2023 00:00:00",
+                "privacy label detail": "The Synthetic Minority Oversampling Technique (SMOTE) approach considers each record in the target data as a point in the feature space (i.e., in a schema with F features, this is an F-dimensional cartersian space with one axis per feature). It then uses a geometric technique such as linear interpolation or k-means clustering to select new points which lie between existing target points.  These new points comprise non-differentially private synthetic data which is very unlikely to contain individuals from the original target data. ",
+                "research papers": "https://doi.org/10.1137/1.9781611977653.ch98"
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "PUMA",
+                "Feature Description": "Public use microdata area code",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "AGEP",
+                "Feature Description": "Person's age",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "MSP",
+                "Feature Description": "Marital Status",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "HISP",
+                "Feature Description": "Hispanic origin",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "RAC1P",
+                "Feature Description": "Person's Race",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "NOC",
+                "Feature Description": "Number of own children in household (unweighted)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "NPF",
+                "Feature Description": "Number of persons in family (unweighted)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "HOUSING_TYPE",
+                "Feature Description": "Housing unit or group quarters",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "DENSITY",
+                "Feature Description": "Population density among residents of each PUMA",
+                "Feature Type": "float64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "INDP",
+                "Feature Description": "Industry codes",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "INDP_CAT",
+                "Feature Description": "Industry categories",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "EDU",
+                "Feature Description": "Educational attainment",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "PINCP",
+                "Feature Description": "Person's total income in dollars",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "PINCP_DECILE",
+                "Feature Description": "Person's total income rank (with respect to their state) discretized into 10% bins.",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "POVPIP",
+                "Feature Description": "Income-to-poverty ratio (ex: 250 = 2.5 x poverty line)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DVET",
+                "Feature Description": "Veteran service connected disability rating (percentage)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DREM",
+                "Feature Description": "Cognitive difficulty",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DPHY",
+                "Feature Description": "Ambulatory (walking) difficulty",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DEYE",
+                "Feature Description": "Vision difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "DEAR",
+                "Feature Description": "Hearing difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "WGTP",
+                "Feature Description": "Housing unit sampling weight",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "PWGTP",
+                "Feature Description": "Person's sampling weight",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "WGTP": {
+                "counts": "univariate/WGTP.csv",
+                "plot": "univariate/WGTP.jpg"
+            },
+            "AGEP": {
+                "counts": "univariate/AGEP.csv",
+                "plot": "univariate/AGEP.jpg"
+            },
+            "PWGTP": {
+                "counts": "univariate/PWGTP.csv",
+                "plot": "univariate/PWGTP.jpg"
+            },
+            "PUMA": {
+                "counts": "univariate/PUMA.csv",
+                "plot": "univariate/PUMA.jpg"
+            },
+            "RAC1P": {
+                "counts": "univariate/RAC1P.csv",
+                "plot": "univariate/RAC1P.jpg"
+            },
+            "PINCP": {
+                "counts": "univariate/PINCP.csv",
+                "plot": "univariate/PINCP.jpg"
+            },
+            "PINCP_DECILE": {
+                "counts": "univariate/PINCP_DECILE.csv",
+                "plot": "univariate/PINCP_DECILE.jpg"
+            },
+            "EDU": {
+                "counts": "univariate/EDU.csv",
+                "plot": "univariate/EDU.jpg"
+            },
+            "INDP": {
+                "Industry Category 4": {
+                    "divergence": 2.344752475247523,
+                    "counts": "univariate/indp_4.csv",
+                    "plot": "univariate/indp_4.jpg"
+                },
+                "Industry Category 5": {
+                    "divergence": 1.9774709302325582,
+                    "counts": "univariate/indp_5.csv",
+                    "plot": "univariate/indp_5.jpg"
+                },
+                "Industry Category 8": {
+                    "divergence": 1.290688259109312,
+                    "counts": "univariate/indp_8.csv",
+                    "plot": "univariate/indp_8.jpg"
+                },
+                "Industry Category 6": {
+                    "divergence": 0.9504345203827069,
+                    "counts": "univariate/indp_6.csv",
+                    "plot": "univariate/indp_6.jpg"
+                },
+                "Industry Category 15": {
+                    "divergence": 0.6134222919937206,
+                    "counts": "univariate/indp_15.csv",
+                    "plot": "univariate/indp_15.jpg"
+                },
+                "Industry Category 7": {
+                    "divergence": 0.5651661427929952,
+                    "counts": "univariate/indp_7.csv",
+                    "plot": "univariate/indp_7.jpg"
+                },
+                "Industry Category 10": {
+                    "divergence": 0.4953658888969153,
+                    "counts": "univariate/indp_10.csv",
+                    "plot": "univariate/indp_10.jpg"
+                },
+                "Industry Category 9": {
+                    "divergence": 0.43599439775910376,
+                    "counts": "univariate/indp_9.csv",
+                    "plot": "univariate/indp_9.jpg"
+                },
+                "Industry Category 17": {
+                    "divergence": 0.3670190274841437,
+                    "counts": "univariate/indp_17.csv",
+                    "plot": "univariate/indp_17.jpg"
+                },
+                "Industry Category 2": {
+                    "divergence": 0.3584059775840598,
+                    "counts": "univariate/indp_2.csv",
+                    "plot": "univariate/indp_2.jpg"
+                },
+                "Industry Category 16": {
+                    "divergence": 0.24036363636363628,
+                    "counts": "univariate/indp_16.csv",
+                    "plot": "univariate/indp_16.jpg"
+                },
+                "Industry Category 13": {
+                    "divergence": 0.22376596281266473,
+                    "counts": "univariate/indp_13.csv",
+                    "plot": "univariate/indp_13.jpg"
+                },
+                "Industry Category 12": {
+                    "divergence": 0.1886138768376042,
+                    "counts": "univariate/indp_12.csv",
+                    "plot": "univariate/indp_12.jpg"
+                },
+                "Industry Category 1": {
+                    "divergence": 0.14369501466275658,
+                    "counts": "univariate/indp_1.csv",
+                    "plot": "univariate/indp_1.jpg"
+                },
+                "Industry Category 14": {
+                    "divergence": 0.10692661155217706,
+                    "counts": "univariate/indp_14.csv",
+                    "plot": "univariate/indp_14.jpg"
+                },
+                "Industry Category 0": {
+                    "divergence": 0.09076470435076933,
+                    "counts": "univariate/indp_0.csv",
+                    "plot": "univariate/indp_0.jpg"
+                },
+                "Industry Category 11": {
+                    "divergence": 0.03526360630790419,
+                    "counts": "univariate/indp_11.csv",
+                    "plot": "univariate/indp_11.jpg"
+                },
+                "Industry Category 3": {
+                    "divergence": 0.0,
+                    "counts": "univariate/indp_3.csv",
+                    "plot": "univariate/indp_3.jpg"
+                },
+                "Industry Category 18": {
+                    "divergence": 0.0,
+                    "counts": "univariate/indp_18.csv",
+                    "plot": "univariate/indp_18.jpg"
+                }
+            },
+            "NPF": {
+                "counts": "univariate/NPF.csv",
+                "plot": "univariate/NPF.jpg"
+            },
+            "INDP_CAT": {
+                "counts": "univariate/INDP_CAT.csv",
+                "plot": "univariate/INDP_CAT.jpg"
+            },
+            "DENSITY": {
+                "counts": "univariate/DENSITY.csv",
+                "plot": "univariate/DENSITY.jpg"
+            },
+            "POVPIP": {
+                "counts": "univariate/POVPIP.csv",
+                "plot": "univariate/POVPIP.jpg"
+            },
+            "HISP": {
+                "counts": "univariate/HISP.csv",
+                "plot": "univariate/HISP.jpg"
+            },
+            "NOC": {
+                "counts": "univariate/NOC.csv",
+                "plot": "univariate/NOC.jpg"
+            },
+            "DPHY": {
+                "counts": "univariate/DPHY.csv",
+                "plot": "univariate/DPHY.jpg"
+            },
+            "SEX": {
+                "counts": "univariate/SEX.csv",
+                "plot": "univariate/SEX.jpg"
+            },
+            "DREM": {
+                "counts": "univariate/DREM.csv",
+                "plot": "univariate/DREM.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "HOUSING_TYPE": {
+                "counts": "univariate/HOUSING_TYPE.csv",
+                "plot": "univariate/HOUSING_TYPE.jpg"
+            },
+            "DEAR": {
+                "counts": "univariate/DEAR.csv",
+                "plot": "univariate/DEAR.jpg"
+            },
+            "DVET": {
+                "counts": "univariate/DVET.csv",
+                "plot": "univariate/DVET.jpg"
+            },
+            "DEYE": {
+                "counts": "univariate/DEYE.csv",
+                "plot": "univariate/DEYE.jpg"
+            },
+            "MSP": {
+                "counts": "univariate/MSP.csv",
+                "plot": "univariate/MSP.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/diff.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/diff.csv",
+            "plot": "pearson_correlation/diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/error.csv",
+            "sub_sampling_equivalent": 40,
+            "k_marginal_score": 915,
+            "score_in_each_puma": "k_marginal_synopsys/score.csv"
+        }
+    },
+    "worst_PUMA_breakdown": {
+        "worst_5_puma_univariate": {
+            "divergence": "k_marginal_breakdown/univariate/divergence.csv",
+            "counts": {
+                "AGEP": {
+                    "counts": "k_marginal_breakdown/univariate/AGEP.csv",
+                    "plot": "k_marginal_breakdown/univariate/AGEP.jpg"
+                },
+                "PWGTP": {
+                    "counts": "k_marginal_breakdown/univariate/PWGTP.csv",
+                    "plot": "k_marginal_breakdown/univariate/PWGTP.jpg"
+                },
+                "WGTP": {
+                    "counts": "k_marginal_breakdown/univariate/WGTP.csv",
+                    "plot": "k_marginal_breakdown/univariate/WGTP.jpg"
+                },
+                "RAC1P": {
+                    "counts": "k_marginal_breakdown/univariate/RAC1P.csv",
+                    "plot": "k_marginal_breakdown/univariate/RAC1P.jpg"
+                },
+                "PINCP": {
+                    "counts": "k_marginal_breakdown/univariate/PINCP.csv",
+                    "plot": "k_marginal_breakdown/univariate/PINCP.jpg"
+                },
+                "INDP": {
+                    "Industry Category 4": {
+                        "divergence": 8.4,
+                        "counts": "k_marginal_breakdown/univariate/indp_4.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_4.jpg"
+                    },
+                    "Industry Category 17": {
+                        "divergence": 1.5833333333333335,
+                        "counts": "k_marginal_breakdown/univariate/indp_17.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_17.jpg"
+                    },
+                    "Industry Category 6": {
+                        "divergence": 1.552027027027027,
+                        "counts": "k_marginal_breakdown/univariate/indp_6.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_6.jpg"
+                    },
+                    "Industry Category 5": {
+                        "divergence": 1.5277777777777777,
+                        "counts": "k_marginal_breakdown/univariate/indp_5.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_5.jpg"
+                    },
+                    "Industry Category 8": {
+                        "divergence": 1.515151515151515,
+                        "counts": "k_marginal_breakdown/univariate/indp_8.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_8.jpg"
+                    },
+                    "Industry Category 15": {
+                        "divergence": 1.252941176470588,
+                        "counts": "k_marginal_breakdown/univariate/indp_15.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_15.jpg"
+                    },
+                    "Industry Category 10": {
+                        "divergence": 1.2020334059549749,
+                        "counts": "k_marginal_breakdown/univariate/indp_10.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_10.jpg"
+                    },
+                    "Industry Category 7": {
+                        "divergence": 0.9743589743589742,
+                        "counts": "k_marginal_breakdown/univariate/indp_7.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_7.jpg"
+                    },
+                    "Industry Category 9": {
+                        "divergence": 0.8398692810457515,
+                        "counts": "k_marginal_breakdown/univariate/indp_9.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_9.jpg"
+                    },
+                    "Industry Category 16": {
+                        "divergence": 0.7435897435897436,
+                        "counts": "k_marginal_breakdown/univariate/indp_16.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_16.jpg"
+                    },
+                    "Industry Category 0": {
+                        "divergence": 0.55,
+                        "counts": "k_marginal_breakdown/univariate/indp_0.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_0.jpg"
+                    },
+                    "Industry Category 12": {
+                        "divergence": 0.5218023255813954,
+                        "counts": "k_marginal_breakdown/univariate/indp_12.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_12.jpg"
+                    },
+                    "Industry Category 2": {
+                        "divergence": 0.5,
+                        "counts": "k_marginal_breakdown/univariate/indp_2.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_2.jpg"
+                    },
+                    "Industry Category 13": {
+                        "divergence": 0.39009054325955733,
+                        "counts": "k_marginal_breakdown/univariate/indp_13.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_13.jpg"
+                    },
+                    "Industry Category 14": {
+                        "divergence": 0.23412606788270604,
+                        "counts": "k_marginal_breakdown/univariate/indp_14.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_14.jpg"
+                    },
+                    "Industry Category 11": {
+                        "divergence": 0.11609258748966658,
+                        "counts": "k_marginal_breakdown/univariate/indp_11.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_11.jpg"
+                    },
+                    "Industry Category 3": {
+                        "divergence": 0.0,
+                        "counts": "k_marginal_breakdown/univariate/indp_3.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_3.jpg"
+                    },
+                    "Industry Category 18": {
+                        "divergence": 0.0,
+                        "counts": "k_marginal_breakdown/univariate/indp_18.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_18.jpg"
+                    },
+                    "Industry Category 1": {
+                        "divergence": 0.0,
+                        "counts": "k_marginal_breakdown/univariate/indp_1.csv",
+                        "plot": "k_marginal_breakdown/univariate/indp_1.jpg"
+                    }
+                },
+                "PINCP_DECILE": {
+                    "counts": "k_marginal_breakdown/univariate/PINCP_DECILE.csv",
+                    "plot": "k_marginal_breakdown/univariate/PINCP_DECILE.jpg"
+                },
+                "EDU": {
+                    "counts": "k_marginal_breakdown/univariate/EDU.csv",
+                    "plot": "k_marginal_breakdown/univariate/EDU.jpg"
+                },
+                "POVPIP": {
+                    "counts": "k_marginal_breakdown/univariate/POVPIP.csv",
+                    "plot": "k_marginal_breakdown/univariate/POVPIP.jpg"
+                },
+                "PUMA": {
+                    "counts": "k_marginal_breakdown/univariate/PUMA.csv",
+                    "plot": "k_marginal_breakdown/univariate/PUMA.jpg"
+                },
+                "HISP": {
+                    "counts": "k_marginal_breakdown/univariate/HISP.csv",
+                    "plot": "k_marginal_breakdown/univariate/HISP.jpg"
+                },
+                "DENSITY": {
+                    "counts": "k_marginal_breakdown/univariate/DENSITY.csv",
+                    "plot": "k_marginal_breakdown/univariate/DENSITY.jpg"
+                },
+                "INDP_CAT": {
+                    "counts": "k_marginal_breakdown/univariate/INDP_CAT.csv",
+                    "plot": "k_marginal_breakdown/univariate/INDP_CAT.jpg"
+                },
+                "NPF": {
+                    "counts": "k_marginal_breakdown/univariate/NPF.csv",
+                    "plot": "k_marginal_breakdown/univariate/NPF.jpg"
+                },
+                "MSP": {
+                    "counts": "k_marginal_breakdown/univariate/MSP.csv",
+                    "plot": "k_marginal_breakdown/univariate/MSP.jpg"
+                },
+                "NOC": {
+                    "counts": "k_marginal_breakdown/univariate/NOC.csv",
+                    "plot": "k_marginal_breakdown/univariate/NOC.jpg"
+                },
+                "OWN_RENT": {
+                    "counts": "k_marginal_breakdown/univariate/OWN_RENT.csv",
+                    "plot": "k_marginal_breakdown/univariate/OWN_RENT.jpg"
+                },
+                "DPHY": {
+                    "counts": "k_marginal_breakdown/univariate/DPHY.csv",
+                    "plot": "k_marginal_breakdown/univariate/DPHY.jpg"
+                },
+                "DREM": {
+                    "counts": "k_marginal_breakdown/univariate/DREM.csv",
+                    "plot": "k_marginal_breakdown/univariate/DREM.jpg"
+                },
+                "HOUSING_TYPE": {
+                    "counts": "k_marginal_breakdown/univariate/HOUSING_TYPE.csv",
+                    "plot": "k_marginal_breakdown/univariate/HOUSING_TYPE.jpg"
+                },
+                "DEAR": {
+                    "counts": "k_marginal_breakdown/univariate/DEAR.csv",
+                    "plot": "k_marginal_breakdown/univariate/DEAR.jpg"
+                },
+                "DVET": {
+                    "counts": "k_marginal_breakdown/univariate/DVET.csv",
+                    "plot": "k_marginal_breakdown/univariate/DVET.jpg"
+                },
+                "DEYE": {
+                    "counts": "k_marginal_breakdown/univariate/DEYE.csv",
+                    "plot": "k_marginal_breakdown/univariate/DEYE.jpg"
+                },
+                "SEX": {
+                    "counts": "k_marginal_breakdown/univariate/SEX.csv",
+                    "plot": "k_marginal_breakdown/univariate/SEX.jpg"
+                }
+            }
+        },
+        "worst_5_puma_k_marginal_scores": "k_marginal_breakdown/worst_puma.csv",
+        "correlation_difference": {
+            "pearson_correlation_difference": {
+                "correlation_difference": "k_marginal_breakdown/pearson_correlation/diff.csv",
+                "plot": "k_marginal_breakdown/pearson_correlation/diff.jpg"
+            }
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.007042118680232755,
+        "propensity_distribution": "propensity/propensity_distribution.csv",
+        "plot": "propensity/propensity_distribution.jpg"
+    },
+    "linear_regression": {
+        "total_population": {
+            "target_counts": "linear_regression/total_population/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/total_population/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.63,
+                -0.1
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.64,
+                -0.07
+            ]
+        },
+        "white_men": {
+            "target_counts": "linear_regression/white_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/white_men/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.68,
+                0.39
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.68,
+                0.12
+            ]
+        },
+        "white_women": {
+            "target_counts": "linear_regression/white_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/white_women/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.66,
+                -0.6
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.61,
+                0.06
+            ]
+        },
+        "black_men": {
+            "target_counts": "linear_regression/black_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/black_men/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.52,
+                0.45
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.56,
+                0.23
+            ]
+        },
+        "black_women": {
+            "target_counts": "linear_regression/black_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/black_women/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.51,
+                0.3
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.51,
+                0.59
+            ]
+        },
+        "asian_men": {
+            "target_counts": "linear_regression/asian_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/asian_men/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.7,
+                -0.68
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.76,
+                -1.2
+            ]
+        },
+        "asian_women": {
+            "target_counts": "linear_regression/asian_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/asian_women/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.55,
+                -0.19
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.6,
+                -0.47
+            ]
+        },
+        "aiannh_men": {
+            "target_counts": "linear_regression/aiannh_men/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/aiannh_men/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.42,
+                1.18
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.63,
+                -0.08
+            ]
+        },
+        "aiannh_women": {
+            "target_counts": "linear_regression/aiannh_women/target.csv",
+            "target_deidentified_counts_difference": "linear_regression/aiannh_women/diff.csv",
+            "target_regression_slope_and_intercept": [
+                0.54,
+                -0.19
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.67,
+                -0.53
+            ]
+        }
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {
+            "MSP-MSP_N-Children (AGEP < 15)": [
+                "pca/target_highlighted_MSP/MSP_N.png",
+                "pca/deidentified_highlighted_MSP/MSP_N.png"
+            ]
+        }
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": [
+                {
+                    "inconsistency_name": "toddler_DPHY",
+                    "inconsistency_description": "Toddlers (< 5) naturally toddle, it's not a physical disability",
+                    "inconsistency_features": [
+                        "AGEP",
+                        "DPHY"
+                    ],
+                    "inconsistency_violations": 195,
+                    "inconsistent_data_indexes": [
+                        23020,
+                        23070,
+                        23108,
+                        23130,
+                        23149,
+                        23156,
+                        23167,
+                        23250,
+                        23252,
+                        23271,
+                        23295,
+                        23328,
+                        23330,
+                        23364,
+                        23385,
+                        23407,
+                        23414,
+                        23415,
+                        23437,
+                        23475,
+                        23488,
+                        23508,
+                        23541,
+                        23543,
+                        23568,
+                        23576,
+                        23600,
+                        23617,
+                        23626,
+                        23640,
+                        23708,
+                        23732,
+                        23751,
+                        23792,
+                        23796,
+                        23798,
+                        23838,
+                        23850,
+                        23897,
+                        23952,
+                        23954,
+                        23978,
+                        24033,
+                        24045,
+                        24047,
+                        24083,
+                        24096,
+                        24108,
+                        24133,
+                        24153,
+                        24156,
+                        24158,
+                        24189,
+                        24191,
+                        24219,
+                        24221,
+                        24271,
+                        24308,
+                        24321,
+                        24344,
+                        24353,
+                        24478,
+                        24554,
+                        24559,
+                        24573,
+                        24597,
+                        24644,
+                        24665,
+                        24677,
+                        24696,
+                        24701,
+                        24708,
+                        24722,
+                        24782,
+                        24804,
+                        24815,
+                        24838,
+                        24851,
+                        24877,
+                        24951,
+                        24959,
+                        24990,
+                        24992,
+                        25002,
+                        25017,
+                        25034,
+                        25118,
+                        25129,
+                        25134,
+                        25144,
+                        25167,
+                        25177,
+                        25188,
+                        25201,
+                        25207,
+                        25212,
+                        25234,
+                        25236,
+                        25295,
+                        25297,
+                        25324,
+                        25365,
+                        25369,
+                        25411,
+                        25456,
+                        25488,
+                        25493,
+                        25494,
+                        25567,
+                        25574,
+                        25583,
+                        25599,
+                        25623,
+                        25641,
+                        25648,
+                        25657,
+                        25669,
+                        25672,
+                        25675,
+                        25678,
+                        25717,
+                        25723,
+                        25724,
+                        25730,
+                        25755,
+                        25759,
+                        25761,
+                        25768,
+                        25772,
+                        25834,
+                        25837,
+                        25851,
+                        25854,
+                        25872,
+                        25884,
+                        25888,
+                        25903,
+                        25913,
+                        25922,
+                        25934,
+                        25970,
+                        26001,
+                        26009,
+                        26149,
+                        26154,
+                        26173,
+                        26177,
+                        26191,
+                        26195,
+                        26246,
+                        26272,
+                        26276,
+                        26289,
+                        26294,
+                        26300,
+                        26310,
+                        26311,
+                        26315,
+                        26341,
+                        26393,
+                        26409,
+                        26449,
+                        26455,
+                        26475,
+                        26480,
+                        26485,
+                        26490,
+                        26664,
+                        26685,
+                        26806,
+                        26915,
+                        26924,
+                        26942,
+                        26950,
+                        26969,
+                        26982,
+                        26987,
+                        26989,
+                        27014,
+                        27042,
+                        27045,
+                        27061,
+                        27080,
+                        27088,
+                        27107,
+                        27115,
+                        27121,
+                        27159,
+                        27161,
+                        27175,
+                        27196,
+                        27209,
+                        27214,
+                        27221,
+                        27245
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/toddler_DPHY_example.csv"
+                },
+                {
+                    "inconsistency_name": "toddler_DREM",
+                    "inconsistency_description": "Toddlers (< 5) are naturally forgetful, it's not a cognitive disability",
+                    "inconsistency_features": [
+                        "AGEP",
+                        "DREM"
+                    ],
+                    "inconsistency_violations": 195,
+                    "inconsistent_data_indexes": [
+                        23020,
+                        23070,
+                        23108,
+                        23130,
+                        23149,
+                        23156,
+                        23167,
+                        23250,
+                        23252,
+                        23271,
+                        23295,
+                        23328,
+                        23330,
+                        23364,
+                        23385,
+                        23407,
+                        23414,
+                        23415,
+                        23437,
+                        23475,
+                        23488,
+                        23508,
+                        23541,
+                        23543,
+                        23568,
+                        23576,
+                        23600,
+                        23617,
+                        23626,
+                        23640,
+                        23708,
+                        23732,
+                        23751,
+                        23792,
+                        23796,
+                        23798,
+                        23838,
+                        23850,
+                        23897,
+                        23952,
+                        23954,
+                        23978,
+                        24033,
+                        24045,
+                        24047,
+                        24083,
+                        24096,
+                        24108,
+                        24133,
+                        24153,
+                        24156,
+                        24158,
+                        24189,
+                        24191,
+                        24219,
+                        24221,
+                        24271,
+                        24308,
+                        24321,
+                        24344,
+                        24353,
+                        24478,
+                        24554,
+                        24559,
+                        24573,
+                        24597,
+                        24644,
+                        24665,
+                        24677,
+                        24696,
+                        24701,
+                        24708,
+                        24722,
+                        24782,
+                        24804,
+                        24815,
+                        24838,
+                        24851,
+                        24877,
+                        24951,
+                        24959,
+                        24990,
+                        24992,
+                        25002,
+                        25017,
+                        25034,
+                        25118,
+                        25129,
+                        25134,
+                        25144,
+                        25167,
+                        25177,
+                        25188,
+                        25201,
+                        25207,
+                        25212,
+                        25234,
+                        25236,
+                        25295,
+                        25297,
+                        25324,
+                        25365,
+                        25369,
+                        25411,
+                        25456,
+                        25488,
+                        25493,
+                        25494,
+                        25567,
+                        25574,
+                        25583,
+                        25599,
+                        25623,
+                        25641,
+                        25648,
+                        25657,
+                        25669,
+                        25672,
+                        25675,
+                        25678,
+                        25717,
+                        25723,
+                        25724,
+                        25730,
+                        25755,
+                        25759,
+                        25761,
+                        25768,
+                        25772,
+                        25834,
+                        25837,
+                        25851,
+                        25854,
+                        25872,
+                        25884,
+                        25888,
+                        25903,
+                        25913,
+                        25922,
+                        25934,
+                        25970,
+                        26001,
+                        26009,
+                        26149,
+                        26154,
+                        26173,
+                        26177,
+                        26191,
+                        26195,
+                        26246,
+                        26272,
+                        26276,
+                        26289,
+                        26294,
+                        26300,
+                        26310,
+                        26311,
+                        26315,
+                        26341,
+                        26393,
+                        26409,
+                        26449,
+                        26455,
+                        26475,
+                        26480,
+                        26485,
+                        26490,
+                        26664,
+                        26685,
+                        26806,
+                        26915,
+                        26924,
+                        26942,
+                        26950,
+                        26969,
+                        26982,
+                        26987,
+                        26989,
+                        27014,
+                        27042,
+                        27045,
+                        27061,
+                        27080,
+                        27088,
+                        27107,
+                        27115,
+                        27121,
+                        27159,
+                        27161,
+                        27175,
+                        27196,
+                        27209,
+                        27214,
+                        27221,
+                        27245
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/toddler_DREM_example.csv"
+                },
+                {
+                    "inconsistency_name": "infant_EDU",
+                    "inconsistency_description": "Infants (< 3) aren't in school",
+                    "inconsistency_features": [
+                        "AGEP",
+                        "EDU"
+                    ],
+                    "inconsistency_violations": 181,
+                    "inconsistent_data_indexes": [
+                        23009,
+                        23037,
+                        23069,
+                        23154,
+                        23156,
+                        23167,
+                        23213,
+                        23248,
+                        23252,
+                        23274,
+                        23290,
+                        23291,
+                        23295,
+                        23308,
+                        23320,
+                        23384,
+                        23406,
+                        23420,
+                        23435,
+                        23464,
+                        23475,
+                        23503,
+                        23541,
+                        23543,
+                        23561,
+                        23571,
+                        23578,
+                        23646,
+                        23652,
+                        23672,
+                        23732,
+                        23767,
+                        23768,
+                        23792,
+                        23822,
+                        23838,
+                        23850,
+                        23882,
+                        23933,
+                        23941,
+                        23944,
+                        23952,
+                        23954,
+                        23981,
+                        24045,
+                        24061,
+                        24122,
+                        24158,
+                        24174,
+                        24189,
+                        24226,
+                        24291,
+                        24304,
+                        24314,
+                        24362,
+                        24440,
+                        24470,
+                        24471,
+                        24505,
+                        24539,
+                        24554,
+                        24566,
+                        24597,
+                        24603,
+                        24615,
+                        24637,
+                        24644,
+                        24665,
+                        24674,
+                        24711,
+                        24721,
+                        24726,
+                        24815,
+                        24836,
+                        24859,
+                        24873,
+                        24895,
+                        24899,
+                        24924,
+                        24939,
+                        24968,
+                        24969,
+                        24985,
+                        24992,
+                        25003,
+                        25023,
+                        25025,
+                        25102,
+                        25120,
+                        25135,
+                        25167,
+                        25185,
+                        25207,
+                        25210,
+                        25212,
+                        25231,
+                        25234,
+                        25297,
+                        25313,
+                        25315,
+                        25317,
+                        25332,
+                        25342,
+                        25356,
+                        25358,
+                        25365,
+                        25369,
+                        25426,
+                        25437,
+                        25454,
+                        25476,
+                        25493,
+                        25524,
+                        25567,
+                        25577,
+                        25583,
+                        25678,
+                        25702,
+                        25709,
+                        25713,
+                        25717,
+                        25724,
+                        25769,
+                        25815,
+                        25820,
+                        25828,
+                        25836,
+                        25842,
+                        25848,
+                        25851,
+                        25888,
+                        25906,
+                        25910,
+                        25955,
+                        25969,
+                        25970,
+                        26029,
+                        26045,
+                        26111,
+                        26121,
+                        26154,
+                        26160,
+                        26180,
+                        26191,
+                        26214,
+                        26226,
+                        26229,
+                        26262,
+                        26276,
+                        26289,
+                        26315,
+                        26341,
+                        26359,
+                        26393,
+                        26409,
+                        26475,
+                        26484,
+                        26492,
+                        26542,
+                        26543,
+                        26553,
+                        26575,
+                        26576,
+                        26591,
+                        26685,
+                        26770,
+                        26791,
+                        26826,
+                        26827,
+                        26846,
+                        26889,
+                        26897,
+                        26928,
+                        26969,
+                        27031,
+                        27042,
+                        27090,
+                        27097,
+                        27159,
+                        27161,
+                        27196
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/infant_EDU_example.csv"
+                },
+                {
+                    "inconsistency_name": "gq_own_jail",
+                    "inconsistency_description": "Inmates don't own jails, patients don't own hospitals: Group quarters residents aren't owners",
+                    "inconsistency_features": [
+                        "HOUSING_TYPE",
+                        "OWN_RENT"
+                    ],
+                    "inconsistency_violations": 15,
+                    "inconsistent_data_indexes": [
+                        9478,
+                        9861,
+                        10812,
+                        10929,
+                        10986,
+                        11575,
+                        11847,
+                        12005,
+                        13675,
+                        13712,
+                        13819,
+                        13980,
+                        15374,
+                        17015,
+                        20328
+                    ],
+                    "inconsistent_record_example": "inconsistencies/work/gq_own_jail_example.csv"
+                },
+                {
+                    "inconsistency_name": "gq_h_family_NPF",
+                    "inconsistency_description": "Individuals who live in group quarters aren't considered family households",
+                    "inconsistency_features": [
+                        "HOUSING_TYPE",
+                        "NPF"
+                    ],
+                    "inconsistency_violations": 24,
+                    "inconsistent_data_indexes": [
+                        9459,
+                        9800,
+                        10089,
+                        10903,
+                        10986,
+                        11087,
+                        11454,
+                        11575,
+                        11847,
+                        12005,
+                        13458,
+                        13581,
+                        13675,
+                        13819,
+                        13980,
+                        15374,
+                        17015,
+                        20251,
+                        22655,
+                        23481,
+                        24550,
+                        24996,
+                        25111,
+                        25545
+                    ],
+                    "inconsistent_record_example": "inconsistencies/work/gq_h_family_NPF_example.csv"
+                },
+                {
+                    "inconsistency_name": "gq_h_family_NOC",
+                    "inconsistency_description": "Individuals who live in group quarters aren't considered family households",
+                    "inconsistency_features": [
+                        "HOUSING_TYPE",
+                        "NOC"
+                    ],
+                    "inconsistency_violations": 36,
+                    "inconsistent_data_indexes": [
+                        9459,
+                        9800,
+                        9861,
+                        10089,
+                        10747,
+                        10812,
+                        10903,
+                        10929,
+                        10986,
+                        11087,
+                        11180,
+                        11454,
+                        11575,
+                        11847,
+                        12005,
+                        12410,
+                        13180,
+                        13458,
+                        13581,
+                        13675,
+                        13819,
+                        13913,
+                        13980,
+                        14004,
+                        14043,
+                        15374,
+                        17015,
+                        17744,
+                        20251,
+                        20328,
+                        22655,
+                        23481,
+                        24550,
+                        24996,
+                        25111,
+                        25545
+                    ],
+                    "inconsistent_record_example": "inconsistencies/work/gq_h_family_NOC_example.csv"
+                },
+                {
+                    "inconsistency_name": "house_NOC",
+                    "inconsistency_description": "Individuals who live in houses must provide number of children",
+                    "inconsistency_features": [
+                        "HOUSING_TYPE",
+                        "NOC"
+                    ],
+                    "inconsistency_violations": 2,
+                    "inconsistent_data_indexes": [
+                        9253,
+                        19989
+                    ],
+                    "inconsistent_record_example": "inconsistencies/work/house_NOC_example.csv"
+                }
+            ]
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 323,
+                "Percent Records Inconsistent": 1.2
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 40,
+                "Percent Records Inconsistent": 0.1
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 4219,
+        "percent records matched in target data": 15.53,
+        "unique target records": 27159,
+        "percent unique target records": 99.66
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/result.csv",
+        "plot": "apparent_match_distribution/dist.jpg"
+    },
+    "created_on": "January 31, 2024 18:07:16",
+    "contains_only_numerical_results": false
+}

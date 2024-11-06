@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e3e881ec11b21b19656624ec57dca451f0336ccc72a66d504cb71af6b784330
-size 1016
+{
+    "labels": {
+        "team": "DataEvolution",
+        "submission timestamp": "4/16/2023 20:31:04",
+        "target dataset": "tx2019",
+        "algorithm name": "Genetic SD",
+        "variant label": "sync_tx2019_1",
+        "epsilon": "1",
+        "delta": "10^(-5)",
+        "submission number": 2,
+        "algorithm type": "query matching",
+        "feature set name": "all-features",
+        "privacy category": "dp",
+        "library name": "Genetic SD",
+        "deid data id": "ec76cb48d40e5071a833668ad5d814d0ed128fe4",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "Our submission satisfies approximate differential privacy. To archive privacy the mechanism utilizes the gaussian mechanism to access statistical properties of the data.",
+        "research papers": "https://doi.org/10.48550/arXiv.2306.03257"
+    }
+}
