@@ -1,7 +1,7 @@
 ## CRC Release Bundle
 
 ### Setup for running jupyter notebooks:
-1. Using a terminal (on max or linux) or powershell (on windows) navigate to the **crc_data_and_metric_bundle_1.3/notebooks** directory.  
+1. Using a terminal (on mac or linux) or powershell (on windows) navigate to the **crc_data_and_metric_bundle_1.3/notebooks** directory.  
 2. In **notebooks** directory create a new python virtual environment using following command:  
 `python -m venv venv`  
 3. Now activate the newly created virtual environment using command:   
