@@ -1,7 +1,14 @@
-# The NIST Collaborative Research Cycle (CRC) Data and Metrics Archive (A.K.A. Research Acceleration Bundle) v1.2
+# The NIST Collaborative Research Cycle (CRC) Data and Metrics Archive (A.K.A. Research Acceleration Bundle) v1.3
 
-- [Direct download link for deidentified data and reports (698 MB)](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.2/crc_data_and_metric_bundle_1.2.zip)
-- [Direct download link for the metareports (669 MB)](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.2/crc_metareport_bundle_1.2.zip)
+- [Direct download link for deidentified data and reports (698 MB)](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.3/crc_data_and_metric_bundle_1.3.zip)
+- [Direct download link for the metareports (669 MB)](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.3/crc_metareport_bundle_1.3.zip)
+
+**Note For Windows Users**  
+If you are unable to unzip the bundles in your default download 
+directory, try moving the zip files to root directory (C:\, D:\, E:\) and then
+unzipping them. Windows has a limitation on the length of the file path and
+this can cause issues when unzipping files in the default download directory.
+
 
 ## Introduction
 
@@ -17,7 +24,7 @@ The original data contains 24 features. We also have a list of recommended reduc
 
 ## What do we have here? 
 
-This repository contains all submissions made in 2023. Additional submissions will be added with the next drop (expected in summer 2024). The repository contains the navigable structure for the entire bundle. You can find all of the compressed data in [Releases](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/tag/v1.2) or you can use the links at the top of this readme.
+This repository contains all submissions made in 2023. Additional submissions will be added with the next drop (expected in summer 2024). The repository contains the navigable structure for the entire bundle. You can find all of the compressed data in [Releases](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/tag/v1.3) or you can use the links at the top of this readme.
 
 The `crc-data-and-metrics-bundle` file contains: 
 
@@ -43,16 +50,16 @@ crc_data_and_metric_bundle_1.2
 			partition             			# e.g., 'ma', 'tx', 'national'
 				technique_variant_data_1	# technique variants are stored together (e.g., DP algorithm with different values of epsilon)
 				technique_variant_data_2
-				technique_variant_report_1
+				technique_variant_report_1  # starting with 'r_' letters
 					report_resources_1
 				tehcnique-variant_report 2
 					report_resources_2
 	notebooks					        # tutorial ipython notebooks to demonstrate navigating the archive.
 	diverse_communities_data_excerpts                       # ground truth target data
 ```
-Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
+Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder (starting with *'r_'* letters) contains metric results from the sdnist evaluation of the data.  
 
-Within the report folder you will find subfolders containing .csv results for each metric, and a report.json file with complete metric results for the full report. The report.html file displays the metric results as a user friendly visual report, including metric documentation, definitions and citations.
+Within the report folder (starting with *'r_'* letters) you will find subfolders containing .csv results for each metric, and a report.json file with complete metric results for the full report. The report.html file displays the metric results as a user friendly visual report, including metric documentation, definitions and citations.
 
 ## How can I use these data? 
 

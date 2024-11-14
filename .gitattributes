@@ -1,4 +1,5 @@
 crc_data_and_metric_bundle_1.2/deid_data/** filter=lfs diff=lfs merge=lfs -text
+crc_data_and_metric_bundle_1.3/deid_data/** filter=lfs diff=lfs merge=lfs -text
 
 crc_metareport_bundle_1.2/**/*.png filter=lfs diff=lfs merge=lfs -text
 crc_metareport_bundle_1.2/**/*.jpg filter=lfs diff=lfs merge=lfs -text
@@ -22,4 +23,27 @@ crc_metareport_bundle_1.2/tumult/**/*.json filter=lfs diff=lfs merge=lfs -text
 crc_metareport_bundle_1.2/UTDallas-AIFairness/**/*.json filter=lfs diff=lfs merge=lfs -text
 crc_metareport_bundle_1.2/ydata-sdk/**/*.json filter=lfs diff=lfs merge=lfs -text
 crc_metareport_bundle_1.2/ydata-synthetic/**/*.json filter=lfs diff=lfs merge=lfs -text
+
+crc_metareport_bundle_1.3/**/*.png filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/**/*.zip filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/**/*.csv filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/**/*.html filter=lfs diff=lfs merge=lfs -text
+
+crc_metareport_bundle_1.3/aindo-synth/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/Anonos[[:space:]]Data[[:space:]]Embassy[[:space:]]SDK/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/Genetic[[:space:]]SD/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/LostInTheNoise/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/MostlyAI[[:space:]]SD/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/rsynthpop/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/Sarus[[:space:]]SDG/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/sdcMicro/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/sdv/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/smartnoise-synth/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/subsample/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/synthcity/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/dphist/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/UTDallas-AIFairness/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/ydata-sdk/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.3/ydata-synthetic/**/*.json filter=lfs diff=lfs merge=lfs -text
 
